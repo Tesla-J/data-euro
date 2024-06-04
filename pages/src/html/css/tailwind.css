@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .menu-option{
+        @apply p-2 flex-1 text-center hover:bg-blue-600 transition duration-100 ease-out hover:ease-in
+    }
+
+    .background{
+        background-image: url('./images/cristiano-small.jpg');
+        @apply bg-no-repeat;
+    }
+
+    @media (min-width: 640px) {
+        
+    }
+
+    @media (min-width: 1024px) {
+        
+    }
+}

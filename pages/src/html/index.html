@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
     <head>
         <meta charset="utf8"/>
         <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
@@ -7,16 +7,63 @@
         <title>DataEuro</title>
     </head>
 
-   <body class="bg-slate-200">
+   <body class="flex flex-col bg-uefa-blue text-slate-50">
         <header>
-            <h1 class="text-xl">Hello!</h1>
+            <figure>
+                <!--<picture></picture>-->
+                <img style="width: 72px; height: auto" src="./images/uefa.jpg" alt="DataEuro logo"/>
+            </figure> 
             <nav>
+                <ul class="flex">
+                    <li class="menu-option"><a href="#">Jogos</a></li>
+                    <li class="menu-option"><a href="#">Grupos</a></li>
+                    <li class="menu-option"><a href="#">Equipas</a></li>
+                </ul>
             </nav>
         </header>
-        <section>
+        <section class="flex-col h-screen" style="background-image: url('./images/cristiano-small.jpg'); background-size: cover; background-repeat: no-repeat;">
+            <h1 class="content-center h-screen w-screen text-center text-5xl" style="background-color: rgba(0,0,0,0.6);">Saiba tudo sobre o &MediumSpace; <em>Euro 2024</em></h1>
         </section>
-        <footer>
-
+        <section class="w-screen bg-slate-200 text-black">
+            <h1 class="text-3xl text-center font-bold my-8">Excitação aumenta nas cidades anfitriãs do EURO 2024</h1>
+            <h2 class="text-lg text-center font-thin py-8">Fãs ao redor das 10 cidades selecionadas para o EURO 2024 terão a chance the presenciar a Copa de Henri Delaunay de perto. </h2>
+            <figure>
+                <img src="./images/tour.avif"/>
+                <figcaption class="text-xs mb-20">Cidades anfitriãs do EURO 2024</figcaption>
+            </figure>
+        </section>
+        <footer class="flex flex-col">
+            <div class="flex flex-row justify-evenly items-center text-center p-8">
+                <figure>
+                    <img style="width: 96px; height: auto;" src="./images/uefa.jpg" alt="UEFA LOGO">
+                </figure>
+                <ul class="flex flex-col text-start">
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Grupos</a></li>
+                    <li><a href="#">Equipas</a></li>
+                </ul>
+            </div>
+            <hr/>
+            <div class="flex flex-col p-8">
+                <h1 class="mb-5 font-bold">VISITE TAMBÉM</h1>
+                <ul class="">
+                    <li><a href="https://en.uefa.com/">UEFA.com</a></li>
+                    <li><a href="https://www.uefa.com/insideuefa/">Inside UEFA</a></li>
+                    <li><a href="https://uefafoundation.org/">UEFA Foundation</a></li>
+                </ul>
+            </div>
+            <hr/>
+            <div class="flex flex-row justify-center p-8">
+                <ul>
+                    <li><a href="#"><small>Privacidade</small></a></li>
+                    <li><a href="#"><small>Politica de cookies</small></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><small>Termos e condições</small></a></li>
+                    <li><a href="#"></a><small>Definições de cookies</small></li>
+                </ul>
+            </div>
+           <p class="flex flex-row justify-center"> <small class="font-thin">&copy; 2024 DataEuro.All rights reserved</small></p> 
         </footer>
    </body> 
 </html>
