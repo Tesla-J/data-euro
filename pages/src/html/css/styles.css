@@ -578,6 +578,10 @@ video {
 @media (min-width: 1024px) {
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -592,6 +596,18 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -630,6 +646,10 @@ video {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .justify-evenly {
   justify-content: space-evenly;
 }
@@ -664,6 +684,10 @@ video {
   padding: 2rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -692,6 +716,11 @@ video {
   line-height: 1rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -711,10 +740,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
   .sm\:w-screen {
     width: 100vw;
   }
@@ -732,21 +757,12 @@ video {
     padding-right: 10rem;
   }
 
-  .sm\:pt-10 {
-    padding-top: 2.5rem;
-  }
-
   .sm\:pt-4 {
     padding-top: 1rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:bg-uefa-blue {
-    --tw-bg-opacity: 1;
-    background-color: rgb(20 60 219 / var(--tw-bg-opacity));
-  }
-
   .lg\:bg-tour-blue {
     --tw-bg-opacity: 1;
     background-color: rgb(0 79 158 / var(--tw-bg-opacity));
