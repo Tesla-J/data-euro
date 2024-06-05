@@ -578,13 +578,8 @@ video {
 @media (min-width: 1024px) {
 }
 
-.absolute {
-  position: absolute;
-}
-
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.relative {
+  position: relative;
 }
 
 .mb-20 {
@@ -595,24 +590,28 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.flex {
-  display: flex;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
-.h-screen {
-  height: 100vh;
+.flex {
+  display: flex;
 }
 
 .h-full {
   height: 100%;
 }
 
-.w-screen {
-  width: 100vw;
+.h-screen {
+  height: 100vh;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .flex-row {
@@ -635,6 +634,10 @@ video {
   justify-content: space-evenly;
 }
 
+.bg-black\/60 {
+  background-color: rgb(0 0 0 / 0.6);
+}
+
 .bg-slate-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
@@ -645,33 +648,8 @@ video {
   background-color: rgb(20 60 219 / var(--tw-bg-opacity));
 }
 
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-transparent {
-  background-color: transparent;
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-black\/50 {
-  background-color: rgb(0 0 0 / 0.5);
-}
-
-.bg-black\/60 {
-  background-color: rgb(0 0 0 / 0.6);
-}
-
-.bg-\[url\(\'\.\/images\/cristiano-small\.jpg\'\)\] {
-  background-image: url('./images/cristiano-small.jpg');
-}
-
 .bg-cristiano-small {
-  background-image: url('./images/cristiano-small.jpg');
+  background-image: url('../images/cristiano-small.jpg');
 }
 
 .bg-cover {
@@ -684,11 +662,6 @@ video {
 
 .p-8 {
   padding: 2rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .text-center {
@@ -737,32 +710,54 @@ video {
   color: rgb(248 250 252 / var(--tw-text-opacity));
 }
 
-.before\:flex-1::before {
-  content: var(--tw-content);
-  flex: 1 1 0%;
-}
-
-.before\:content-\[\]::before {
-  --tw-content: ;
-  content: var(--tw-content);
-}
-
-.before\:content-\[\'\'\]::before {
-  --tw-content: '';
-  content: var(--tw-content);
-}
-
-.after\:flex-1::after {
-  content: var(--tw-content);
-  flex: 1 1 0%;
-}
-
 @media (min-width: 640px) {
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .sm\:w-screen {
     width: 100vw;
   }
 
-  .sm\:break-words {
-    overflow-wrap: break-word;
+  .sm\:bg-vini-medium {
+    background-image: url('../images/vini-medium.jpg');
+  }
+
+  .sm\:bg-top {
+    background-position: top;
+  }
+
+  .sm\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .sm\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .sm\:pt-4 {
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:bg-uefa-blue {
+    --tw-bg-opacity: 1;
+    background-color: rgb(20 60 219 / var(--tw-bg-opacity));
+  }
+
+  .lg\:bg-tour-blue {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 79 158 / var(--tw-bg-opacity));
+  }
+
+  .lg\:bg-mbappe-large {
+    background-image: url('../images/mbappe-large.jpg');
+  }
+
+  .lg\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
