@@ -12,7 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('Resultado', function (Blueprint $table) {
-            //
+            $table->id();
+            $table->integer("golos_equipa1");
+            $table->integer("golos_equipa2");
+            $table->timestamps();
         });
     }
 

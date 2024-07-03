@@ -12,7 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('Selecao', function (Blueprint $table) {
-            //
+            $table->id();
+            $table->string("nome")->unique();
+            $table->integer("pais");
+            $table->integer("grupo");
+            $table->timestamps();
         });
     }
 

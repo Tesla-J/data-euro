@@ -12,7 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('Jogador', function (Blueprint $table) {
-            //
+            $table->id();
+            $table->string("nome");
+            $table->string("nacionalidade"); // poderia ser um referencia ao país...
+            $table->integer("camisola");
+            $table->integer("selecao");
+            $table->integer("golos")->default(0);
+            $table->timestamps();
         });
     }
 

@@ -12,7 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('Calendario', function (Blueprint $table) {
-            //
+            $table->id();
+            $table->integer("selecao1");
+            $table->integer("selecao2");
+            $table->integer("jogo");
+            $table->date("data_jogo");
+            $table->timestamps();
         });
     }
 

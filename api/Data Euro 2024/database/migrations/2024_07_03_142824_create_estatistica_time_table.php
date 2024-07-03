@@ -12,7 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('EstatisticaTime', function (Blueprint $table) {
-            //
+            $table->id();
+            $table->integer("remates")->default(0);
+            $table->integer("livres")->default(0);
+            $table->integer("foras_jogo")->default(0);
+            $table->integer("jogo");
+            $table->timestamps();
         });
     }
 
