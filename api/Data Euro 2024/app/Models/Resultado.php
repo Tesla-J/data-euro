@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Resultado extends Model
 {
     use HasFactory;
+
+    public function jogo() {
+        return $this->belongsTo(Jogo::class);
+    }
 }

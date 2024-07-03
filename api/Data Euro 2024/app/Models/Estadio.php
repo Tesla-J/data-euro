@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Estadio extends Model
 {
     use HasFactory;
+
+    public function cidades() {
+        return $this->hasMany(Cidade::class);
+    }
 }
